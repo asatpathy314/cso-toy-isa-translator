@@ -4,9 +4,10 @@ No need to install any external libraries.
 
 Example Usage:
 
+```python
 import translator from program_translator
 
 converter = translator(file_path_to_your_hex_file)
 print(converter.readable)
-
+```
 
