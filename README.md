@@ -3,6 +3,8 @@ Translator that takes in hex commands and converts it to understandable instruct
 
 No need to install any external libraries.
 
+There's a bug on windows 
+
 Example Usage:
 
 ```python

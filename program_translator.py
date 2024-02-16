@@ -31,7 +31,7 @@ class translator:
         """
         bits.replace("0x", "")
         arr_hex_str = re.sub(r'[^a-zA-Z0-9]+', ' ', bits).strip().split(" ")
-        arr_bin = [format(int(x, 16),  '#010b') for x in arr_hex_str]
+        arr_bin = [format(int(str(x), 16),  '#010b') for x in arr_hex_str]
         return arr_bin
 
     def translation_bin_to_isa(self, instruction, oldPC):
