@@ -11,7 +11,7 @@ class translator:
             if x!=pC:
                 continue
             concat = self.translation_bin_to_isa(arr_bin[x], pC) + '\n'
-            if(re.search(r'M', concat)):
+            if(re.search(r'M[oldPC+1]', concat)):
                 pC+=2
             else:
                 pC+=1
@@ -86,4 +86,4 @@ class translator:
                 decoded += "if(R[a] <= 0): pC = R[b]"
         return decoded.replace('a', str(a)).replace('b', str(b))
     
-    
+
