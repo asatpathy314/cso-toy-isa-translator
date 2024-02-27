@@ -8,7 +8,7 @@ Example Usage:
 ```python
 from translator import program_translator
 
-converter = translator(file_path_to_your_hex_file)
+converter = Translator("file_path_to_your_hex_file")
 print(converter.readable)
 ```
 
