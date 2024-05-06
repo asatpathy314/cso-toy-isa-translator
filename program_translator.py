@@ -102,5 +102,5 @@ class Translator:
         return decoded.replace('a', str(a)).replace('b', str(b)), 1
     
 if __name__ == "__main__":
-    trans = Translator("")
+    trans = Translator("./programs/test")
     print(trans.readable)
